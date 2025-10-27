@@ -1,12 +1,9 @@
 name: run main.py
 
-on:
-  push:
-    branches:
-      - main
+on:  
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *' # At 00:00 on Monday
+    - cron: '0 */3 * * *' # At 00:00 on Monday
 
 jobs:
   build:
